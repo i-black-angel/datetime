@@ -1,6 +1,8 @@
 TARGET=main
 
-$(TARGET): main.o
+OBJECTS=main.o
+
+$(TARGET): $(OBJECTS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
 
 all: $(TARGET)

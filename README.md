@@ -1,5 +1,9 @@
 # Datetime code
 
-## compile
+## Compile
 
-* g++ -o main main.cpp
+* make
+
+## Run
+
+* `./main`

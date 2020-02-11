@@ -17,6 +17,7 @@
 #include <sys/time.h>
 #include <time.h>
 #include <string>
+#include <iostream>
 
 namespace mpl {
 // FORMAT: [2020-02-11 15:10:27]
@@ -45,5 +46,7 @@ std::string now_ms() {
 int main(int argc, char *argv[]) {
     printf("mpl::now()\t%s\n", mpl::now().c_str());
     printf("mpl::now_ms()\t%s\n", mpl::now_ms().c_str());
+
+    std::cout << mpl::now_ms() << std::endl;
     return 0;
 }
